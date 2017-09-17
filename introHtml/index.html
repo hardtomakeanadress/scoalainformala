@@ -39,10 +39,14 @@
         <span class="glyphicon glyphicon-user"></span>
         See my colleagues
       </a>
+      <a href="#" class="btn btn-default btn-lg" id="makeFriendButton">
+        <span class="glyphicon glyphicon-plus"></span>
+        Make a new friend
+      </a>
     </div>
     <!-- Colleagues Container -->
-    <div hidden class="container-fluid bg-4 text-center" id="colleaguesContainer">
-        <div class="list-group">
+    <div class="container bg-4 text-center" id="colleaguesContainer">
+        <div class="list-group" id="list">
             <a href="https://front-end-jack-gergobalogh.c9users.io/HTML_HW/HTML_HW_GERGO.html" target="_blank" class="list-group-item">Gergo</a>
             <a href="https://front-end-adinapascu-adinapascu.c9users.io/Curs2HTML-Intro/AdinaPascuBlog.html" class="list-group-item">Adina Pascu</a>
             <a href="https://mihai-muresan-front-end-mmuresan.c9users.io/Homework2HTMLIntro/index.html" class="list-group-item">Mihai Muresan</a>
@@ -52,6 +56,26 @@
             <a href="https://front-end-project-iceburger.c9users.io/curs2HTML_Intro/Assignment_Intro_HTML.html" class="list-group-item">Siegfried</a>
             <a href="https://scoala-informala-claudiaasavinei.c9users.io/curs2HTML/Tema1HTML/Tema1HTML.html" class="list-group-item">Claudia Asavinei</a>
         </div>
+    </div>
+    <!-- Form Container -->
+    <div class="container bg-4" id="submitForm">
+        <form id="makeFriendForm">
+            <div class="form-group">
+                <label for="emailAddress">Email address</label>
+                <input class="form-control" id="emailAddress" type="text" placeholder="Email Address" name="email">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" id="name" type="text" placeholder="Name" name="Name">
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="pets" value="cats" id="cats">You like cats</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="pets" value="dogs" id="dogs">You like dogs</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="makeFriendSubmitButton">Make it happen !</button>
+        </form>
     </div>
     <script src="js\script.js"></script>
   </body>

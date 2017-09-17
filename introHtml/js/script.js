@@ -1,7 +1,27 @@
-$("#getColleaguesButton").click(function() {
-    $("#colleaguesContainer").removeAttr("hidden");
+$( document ).ready(function() {
+    $("#colleaguesContainer").hide();
+    $("#submitForm").hide();
 });
 
+$("#getColleaguesButton").click(function() {
+    $("#colleaguesContainer").toggle();
+
+});
+
+$("#makeFriendButton").click(function() {
+    $("#colleaguesContainer").hide();
+    $("#submitForm").toggle();
+});
+
+$("#makeFriendForm").submit(function( event ) {
+    event.preventDefault();
+    var formData = $(this).serializeArray();
+    var abc;
+    $.each(formData, function(i, field){
+        $("#list").append(field.name + ":" + field.value + " ");
+    });
+
+});
 
 // $(document).ready(function() {
 //     $.ajax({
