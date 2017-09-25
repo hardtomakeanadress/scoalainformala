@@ -1,0 +1,92 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: darkolivegreen;
+    min-height: 50px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.nav-brand {
+    color: #fed136;
+}
+
+.right-navbar {
+    float: right;
+    padding-top: 15px;
+}
+
+.right-navbar a {
+    color: white;
+}
+
+header {
+    background-color: #223;
+    height: 300px;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+}
+
+header button{
+    background-color: yellow;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.post {
+    border: solid 2px chartreuse;
+    padding: 10px;
+}
+
+article {
+    width: 550px;
+}
+
+aside {
+    width: 200px;
+}
+
+footer {
+    background-color: darkolivegreen;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    padding: 10px;
+}
+

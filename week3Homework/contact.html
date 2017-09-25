@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact page</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <nav class="clearfix">
+            <div class="navbar-container pull-right">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>SEND ME A MESSAGE</h1>
+            <img src="contact.jpg" alt="contact picture">
+        </header>
+
+        <main class="clearfix">
+            <aside class="left-navbar-container pull-left">
+                    <a href="#">FACEBOOK</a>
+                    <a href="#">TWITTER</a>
+                    <a href="#">GOOGLE +</a>
+                    <a href="#">LINKEDIN</a>
+            </aside>
+            <article class="pull-right">
+                <section class="contact-form">
+                    <p id="response"></p>
+                    <form id="contactForm">
+                        <input type="text" name="input-name" placeholder="Enter your name" id="input-name"><br>
+                        <textarea rows="4" cols="50" placeholder="Enter your message here"></textarea><br>
+                        <button onclick="sayThanks()">ENGAGE ;)</button>
+                    </form>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <em>Created using notepad :P</em>
+        </footer>
+        <script>
+            function sayThanks() {
+                event.preventDefault();
+                var name     = document.getElementById("input-name").value;
+                var greeting = "Thanks for your toughts, " + name.toUpperCase();
+                
+                document.getElementById("response").innerHTML = greeting;
+                document.getElementById("contactForm").reset();
+            }
+        </script>
+    </body>
+</html>
