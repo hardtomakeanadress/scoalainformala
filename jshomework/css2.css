@@ -1,0 +1,13 @@
+.tile {
+    background-color: lightgray;
+    border: 1px solid black;
+    float: left;
+    padding: 10px;
+    height: auto;
+    margin: 10px;
+    width: 200px;
+}
+
+#container {
+    width: 550px;
+}
